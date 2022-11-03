@@ -1,0 +1,150 @@
+
+ 2022-11-03 14:18:12:package sdk doing ......
+�M2022-11-03 14:18:28 step checking /usr/local/ev_sdk/config/algo_config.json:�~{
+    "draw_roi_area": true,
+    
+    "roi_type": "polygon_1",
+    "polygon_1": ["POLYGON((0 0, 1 0, 1 1, 0 1))"],
+
+    "roi_color": [255, 255, 0, 0.7],
+    "roi_line_thickness": 4,
+    "roi_fill": false,
+    "draw_result": true,
+    "draw_confidence": true,
+    "thresh": 0.25,
+    "language": "en",
+
+    "target_rect_color": [0, 0, 255, 0],
+    "object_rect_line_thickness": 3,
+    "object_text_color": [255, 255, 255, 0],
+    "object_text_bg_color": [50, 50, 50, 0],
+    "object_text_size": 30,
+    "mark_text_en": ["front_wear","front_no_wear","front_under_nose_wear","front_under_mouth_wear","mask_front_wear","mask_front_under_nose_wear","mask_front_under_mouth_wear","side_wear","side_no_wear","side_under_nose_wear","side_under_mouth_wear","mask_side_wear","mask_side_under_nose_wear","mask_side_under_mouth_wear","side_back_head_wear","side_back_head_no_wear","back_head","strap","front_unknown","side_unknown"],
+    "mark_text_zh": ["正面佩戴口罩包住鼻子","正面未佩戴口罩","正面佩戴口罩在鼻子下且在嘴巴上面","正面佩戴口罩在嘴巴下面","口罩包住鼻子","口罩在鼻子下且在嘴巴上面","口罩在嘴巴下面","侧面佩戴口罩包住鼻子","侧面未佩戴口罩","侧面佩戴口罩在鼻子下且在嘴巴上面","侧面佩戴口罩在嘴巴下面","口罩包住鼻子","口罩在鼻子下且在嘴巴上面","口罩在嘴巴下面","侧面佩戴口罩","侧后方未佩戴口罩","背面人头","带子","正面人头","侧面人头"],
+    "draw_warning_text": true,
+    "warning_text_en": "WARNING! WARNING!",
+    "warning_text_zh": "警告!",
+    "warning_text_size": 60,
+    "warning_text_color": [255, 255, 255, 0],
+    "warning_text_bg_color": [0, 0, 200, 0],
+    "warning_text_left_top": [0, 0]
+}�~	d-----ewogICAgImRyYXdfcm9pX2FyZWEiOiB0cnVlLAogICAgCiAgICAicm9pX3R5cGUiOiAicG9seWdv bl8xIiwKICAgICJwb2x5Z29uXzEiOiBbIlBPTFlHT04oKDAgMCwgMSAwLCAxIDEsIDAgMSkpIl0s CgogICAgInJvaV9jb2xvciI6IFsyNTUsIDI1NSwgMCwgMC43XSwKICAgICJyb2lfbGluZV90aGlj a25lc3MiOiA0LAogICAgInJvaV9maWxsIjogZmFsc2UsCiAgICAiZHJhd19yZXN1bHQiOiB0cnVl LAogICAgImRyYXdfY29uZmlkZW5jZSI6IHRydWUsCiAgICAidGhyZXNoIjogMC4yNSwKICAgICJs YW5ndWFnZSI6ICJlbiIsCgogICAgInRhcmdldF9yZWN0X2NvbG9yIjogWzAsIDAsIDI1NSwgMF0s CiAgICAib2JqZWN0X3JlY3RfbGluZV90aGlja25lc3MiOiAzLAogICAgIm9iamVjdF90ZXh0X2Nv bG9yIjogWzI1NSwgMjU1LCAyNTUsIDBdLAogICAgIm9iamVjdF90ZXh0X2JnX2NvbG9yIjogWzUw LCA1MCwgNTAsIDBdLAogICAgIm9iamVjdF90ZXh0X3NpemUiOiAzMCwKICAgICJtYXJrX3RleHRf ZW4iOiBbImZyb250X3dlYXIiLCJmcm9udF9ub193ZWFyIiwiZnJvbnRfdW5kZXJfbm9zZV93ZWFy IiwiZnJvbnRfdW5kZXJfbW91dGhfd2VhciIsIm1hc2tfZnJvbnRfd2VhciIsIm1hc2tfZnJvbnRf dW5kZXJfbm9zZV93ZWFyIiwibWFza19mcm9udF91bmRlcl9tb3V0aF93ZWFyIiwic2lkZV93ZWFy Iiwic2lkZV9ub193ZWFyIiwic2lkZV91bmRlcl9ub3NlX3dlYXIiLCJzaWRlX3VuZGVyX21vdXRo X3dlYXIiLCJtYXNrX3NpZGVfd2VhciIsIm1hc2tfc2lkZV91bmRlcl9ub3NlX3dlYXIiLCJtYXNr X3NpZGVfdW5kZXJfbW91dGhfd2VhciIsInNpZGVfYmFja19oZWFkX3dlYXIiLCJzaWRlX2JhY2tf aGVhZF9ub193ZWFyIiwiYmFja19oZWFkIiwic3RyYXAiLCJmcm9udF91bmtub3duIiwic2lkZV91 bmtub3duIl0sCiAgICAibWFya190ZXh0X3poIjogWyLmraPpnaLkvanmiLTlj6PnvanljIXkvY/p vLvlrZAiLCLmraPpnaLmnKrkvanmiLTlj6PnvakiLCLmraPpnaLkvanmiLTlj6PnvanlnKjpvLvl rZDkuIvkuJTlnKjlmLTlt7TkuIrpnaIiLCLmraPpnaLkvanmiLTlj6PnvanlnKjlmLTlt7TkuIvp naIiLCLlj6PnvanljIXkvY/pvLvlrZAiLCLlj6PnvanlnKjpvLvlrZDkuIvkuJTlnKjlmLTlt7Tk uIrpnaIiLCLlj6PnvanlnKjlmLTlt7TkuIvpnaIiLCLkvqfpnaLkvanmiLTlj6PnvanljIXkvY/p vLvlrZAiLCLkvqfpnaLmnKrkvanmiLTlj6PnvakiLCLkvqfpnaLkvanmiLTlj6PnvanlnKjpvLvl rZDkuIvkuJTlnKjlmLTlt7TkuIrpnaIiLCLkvqfpnaLkvanmiLTlj6PnvanlnKjlmLTlt7TkuIvp naIiLCLlj6PnvanljIXkvY/pvLvlrZAiLCLlj6PnvanlnKjpvLvlrZDkuIvkuJTlnKjlmLTlt7Tk uIrpnaIiLCLlj6PnvanlnKjlmLTlt7TkuIvpnaIiLCLkvqfpnaLkvanmiLTlj6PnvakiLCLkvqfl kI7mlrnmnKrkvanmiLTlj6PnvakiLCLog4zpnaLkurrlpLQiLCLluKblrZAiLCLmraPpnaLkurrl pLQiLCLkvqfpnaLkurrlpLQiXSwKICAgICJkcmF3X3dhcm5pbmdfdGV4dCI6IHRydWUsCiAgICAi d2FybmluZ190ZXh0X2VuIjogIldBUk5JTkchIFdBUk5JTkchIiwKICAgICJ3YXJuaW5nX3RleHRf emgiOiAi6K2m5ZGKISIsCiAgICAid2FybmluZ190ZXh0X3NpemUiOiA2MCwKICAgICJ3YXJuaW5n X3RleHRfY29sb3IiOiBbMjU1LCAyNTUsIDI1NSwgMF0sCiAgICAid2FybmluZ190ZXh0X2JnX2Nv bG9yIjogWzAsIDAsIDIwMCwgMF0sCiAgICAid2FybmluZ190ZXh0X2xlZnRfdG9wIjogWzAsIDBd Cn0=-----
+�!2022-11-03 14:18:28 CHECK_OK:1
+�)2022-11-03 14:18:28 MODER_ID:[1173189]
+�\2022-11-03 14:18:29 step copy model: exp7/weights/best.onnx to /usr/local/ev_sdk/model ok
+�I2022-11-03 14:18:29 step exec cmake .. && make install to compile code
+�-- Configuring done
+�-- Generating done
+�?-- Build files have been written to: /usr/local/ev_sdk/build
+�9[35m[1mScanning dependencies of target WKTParser[0m
+�b[ 10%] [32mBuilding CXX object 3rd/wkt_parser/CMakeFiles/WKTParser.dir/src/WKTParser.cpp.o[0m
+�A[ 20%] [32m[1mLinking CXX shared library libWKTParser.so[0m
+� [ 20%] Built target WKTParser
+�7[35m[1mScanning dependencies of target jsoncpp[0m
+�f[ 30%] [32mBuilding CXX object 3rd/jsoncpp_simple/CMakeFiles/jsoncpp.dir/src/json_reader.cpp.o[0m
+�e[ 40%] [32mBuilding CXX object 3rd/jsoncpp_simple/CMakeFiles/jsoncpp.dir/src/json_value.cpp.o[0m
+�f[ 50%] [32mBuilding CXX object 3rd/jsoncpp_simple/CMakeFiles/jsoncpp.dir/src/json_writer.cpp.o[0m
+�?[ 60%] [32m[1mLinking CXX shared library libjsoncpp.so[0m
+�[ 60%] Built target jsoncpp
+�2[35m[1mScanning dependencies of target ji[0m
+�R[ 70%] [32mBuilding CXX object CMakeFiles/ji.dir/src/SampleAlgorithm.cpp.o[0m
+�~�[01m[K/usr/local/ev_sdk/src/SampleAlgorithm.cpp:[m[K In member function ‘[01m[Kint SampleAlgorithm::Process(const cv::Mat&, const char*, JiEvent&)[m[K’:
+[01m[K/usr/local/ev_sdk/src/SampleAlgorithm.cpp:180:45:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kobject.BoxInfo::x1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect = cv::Rect{object.x1, object.y1, object.x2 - object.x1, object.y2 - object.y1};
+[01;32m[K                                             ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleAlgorithm.cpp:180:56:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kobject.BoxInfo::y1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect = cv::Rect{object.x1, object.y1, object.x2 - object.x1, object.y2 - object.y1};
+[01;32m[K                                                        ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleAlgorithm.cpp:180:70:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(object.BoxInfo::x2 - object.BoxInfo::x1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect = cv::Rect{object.x1, object.y1, object.x2 - object.x1, object.y2 - object.y1};
+[01;32m[K                                                                      ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleAlgorithm.cpp:180:93:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(object.BoxInfo::y2 - object.BoxInfo::y1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect = cv::Rect{object.x1, object.y1, object.x2 - object.x1, object.y2 - object.y1};
+[01;32m[K                                                                                             ^[m[K
+�Q[ 80%] [32mBuilding CXX object CMakeFiles/ji.dir/src/SampleDetector.cpp.o[0m
+�~g[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:[m[K In member function ‘[01m[Kbool SampleDetector::Init(const string&, float)[m[K’:
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:106:145:[m[K [01;35m[Kwarning: [m[Kpointer of type ‘[01m[Kvoid *[m[K’ used in arithmetic [-Wpointer-arith]
+     m_InputWrappers.emplace_back(dims_i.d[2], dims_i.d[3], CV_32FC1, m_ArrayHostMemory[m_iInputIndex] + sizeof(float) * dims_i.d[2] * dims_i.d[3] );
+[01;32m[K                                                                                                                                                 ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:107:149:[m[K [01;35m[Kwarning: [m[Kpointer of type ‘[01m[Kvoid *[m[K’ used in arithmetic [-Wpointer-arith]
+     m_InputWrappers.emplace_back(dims_i.d[2], dims_i.d[3], CV_32FC1, m_ArrayHostMemory[m_iInputIndex] + 2 * sizeof(float) * dims_i.d[2] * dims_i.d[3]);
+[01;32m[K                                                                                                                                                     ^[m[K
+�~�[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:[m[K In member function ‘[01m[Kbool SampleDetector::ProcessImage(const cv::Mat&, std::vector<BoxInfo>&, float)[m[K’:
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:153:43:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((float)img->cv::Mat::cols * r)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+     cv::Size new_size = cv::Size{img.cols * r, img.rows * r};    
+[01;32m[K                                           ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:153:57:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((float)img->cv::Mat::rows * r)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+     cv::Size new_size = cv::Size{img.cols * r, img.rows * r};    
+[01;32m[K                                                         ^[m[K
+�~
+�[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:[m[K In static member function ‘[01m[Kstatic void SampleDetector::runNms(std::vector<BoxInfo>&, float)[m[K’:
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:189:50:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::x1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect1 = cv::Rect{objects[i].x1, objects[i].y1, objects[i].x2 - objects[i].x1, objects[i].y2 - objects[i].y1};
+[01;32m[K                                                  ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:189:65:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::y1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect1 = cv::Rect{objects[i].x1, objects[i].y1, objects[i].x2 - objects[i].x1, objects[i].y2 - objects[i].y1};
+[01;32m[K                                                                 ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:189:83:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::x2 - (& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::x1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect1 = cv::Rect{objects[i].x1, objects[i].y1, objects[i].x2 - objects[i].x1, objects[i].y2 - objects[i].y1};
+[01;32m[K                                                                                   ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:189:114:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::y2 - (& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::y1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect1 = cv::Rect{objects[i].x1, objects[i].y1, objects[i].x2 - objects[i].x1, objects[i].y2 - objects[i].y1};
+[01;32m[K                                                                                                                  ^[m[K
+�~=[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:190:50:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)j)).BoxInfo::x1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect2 = cv::Rect{objects[j].x1, objects[j].y1, objects[j].x2 - objects[i].x1, objects[j].y2 - objects[j].y1};
+[01;32m[K                                                  ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:190:65:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)j)).BoxInfo::y1[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect2 = cv::Rect{objects[j].x1, objects[j].y1, objects[j].x2 - objects[i].x1, objects[j].y2 - objects[j].y1};
+[01;32m[K                                                                 ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:190:83:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)j)).BoxInfo::x2 - (& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)i)).BoxInfo::x1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect2 = cv::Rect{objects[j].x1, objects[j].y1, objects[j].x2 - objects[i].x1, objects[j].y2 - objects[j].y1};
+[01;32m[K                                                                                   ^[m[K
+�~�[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:190:114:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)j)).BoxInfo::y2 - (& objects)->std::vector<_Tp, _Alloc>::operator[]<BoxInfo, std::allocator<BoxInfo> >(((std::vector<BoxInfo>::size_type)j)).BoxInfo::y1)[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+             cv::Rect rect2 = cv::Rect{objects[j].x1, objects[j].y1, objects[j].x2 - objects[i].x1, objects[j].y2 - objects[j].y1};
+[01;32m[K                                                                                                                  ^[m[K
+�~�[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:[m[K In member function ‘[01m[Kvoid SampleDetector::decode_outputs(float*, float, std::vector<BoxInfo>&, float, int, int)[m[K’:
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:232:31:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(x - (w * 5.0e-1f))[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+                 cv::Rect box{x- w / 2, y - h / 2, w, h};
+[01;32m[K                               ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:232:42:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(y - (h * 5.0e-1f))[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+                 cv::Rect box{x- w / 2, y - h / 2, w, h};
+[01;32m[K                                          ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:232:55:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kw[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+                 cv::Rect box{x- w / 2, y - h / 2, w, h};
+[01;32m[K                                                       ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:232:55:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kh[m[K’ from ‘[01m[Kfloat[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+�~
+I[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:236:46:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kbox.cv::Rect_<int>::x[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [-Wnarrowing]
+                     BoxInfo box_info = { box.x, box.y, box.x + box.width, box.y + box.height, (*max_cls_pos) * prob[index+4], max_cls_pos - (prob + index + 5)};
+[01;32m[K                                              ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:236:53:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kbox.cv::Rect_<int>::y[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [-Wnarrowing]
+                     BoxInfo box_info = { box.x, box.y, box.x + box.width, box.y + box.height, (*max_cls_pos) * prob[index+4], max_cls_pos - (prob + index + 5)};
+[01;32m[K                                                     ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:236:62:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(box.cv::Rect_<int>::x + box.cv::Rect_<int>::width)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [-Wnarrowing]
+                     BoxInfo box_info = { box.x, box.y, box.x + box.width, box.y + box.height, (*max_cls_pos) * prob[index+4], max_cls_pos - (prob + index + 5)};
+[01;32m[K                                                              ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:236:81:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(box.cv::Rect_<int>::y + box.cv::Rect_<int>::height)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [-Wnarrowing]
+                     BoxInfo box_info = { box.x, box.y, box.x + box.width, box.y + box.height, (*max_cls_pos) * prob[index+4], max_cls_pos - (prob + index + 5)};
+[01;32m[K                                                                                 ^[m[K
+[01m[K/usr/local/ev_sdk/src/SampleDetector.cpp:236:139:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((((long int)max_cls_pos) - ((long int)(prob + ((((sizetype)index) + 5u) * 4u)))) (ceiling /) 4l)[m[K’ from ‘[01m[Klong int[m[K’ to ‘[01m[Kint[m[K’ inside { } [-Wnarrowing]
+                     BoxInfo box_info = { box.x, box.y, box.x + box.width, box.y + box.height, (*max_cls_pos) * prob[index+4], max_cls_pos - (prob + index + 5)};
+[01;32m[K                                                                                                                                           ^[m[K
+�E[ 90%] [32mBuilding CXX object CMakeFiles/ji.dir/src/ji.cpp.o[0m
+�:[100%] [32m[1mLinking CXX shared library libji.so[0m
+�[100%] Built target ji
+�"[36mInstall the project...[0m
+�&-- Install configuration: "Release"
+�0-- Installing: /usr/local/ev_sdk/lib/libji.so
+�k-- Set runtime path of "/usr/local/ev_sdk/lib/libji.so" to "/usr/local/ev_sdk/lib:/usr/local/ev_sdk/lib"
+�--- Up-to-date: /usr/local/ev_sdk/lib/fonts
+�G-- Up-to-date: /usr/local/ev_sdk/lib/fonts/NotoSansCJKsc-Regular.otf
+�5-- Installing: /usr/local/ev_sdk/lib/libjsoncpp.so
+�Z-- Set runtime path of "/usr/local/ev_sdk/lib/libjsoncpp.so" to "/usr/local/ev_sdk/lib"
+�7-- Installing: /usr/local/ev_sdk/lib/libWKTParser.so
+�\-- Set runtime path of "/usr/local/ev_sdk/lib/libWKTParser.so" to "/usr/local/ev_sdk/lib"
+�F2022-11-03 14:18:49 step clear compile file /usr/local/ev_sdk/build
+�F2022-11-03 14:18:49 step checking /usr/local/ev_sdk/lib/libji.so:ok
+�@2022-11-03 14:18:49 step remove reference.txt and license.txt
+�Gfind: ‘/usr/local/ji_model_zoo/model’: No such file or directory
+�	
+ 2022-11-03 14:19:15:package sdk success!
