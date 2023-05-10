@@ -1,0 +1,38 @@
+{
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",       
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/trt/", "/usr/local/ev_model_ability_supply/lib/atlas/"],       
+    "listen_address":"unix:/tmp/local.socket",
+    "serving_models":
+    [
+        {
+            "ins_num":2,
+            "type":"det",
+            "engine":"trt",
+            "framework":"yolov5",
+            "version":"v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov5s_enc.onnx"
+        },
+        {
+            "ins_num":2,
+            "type":"det",
+            "engine":"trt",
+            "framework":"yolov7",
+            "version":"v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov7_enc.onnx"
+        },
+
+        {
+            "ins_num":2,
+            "type":"ocr",
+            "engine":"trt",
+            "framework":"evplate",
+            "version":"v1",
+            "model":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.onnx"
+        }
+
+    ],
+    "auth":{
+        "port" : 4001,
+        "ip":"192.168.1.186"
+    }
+}

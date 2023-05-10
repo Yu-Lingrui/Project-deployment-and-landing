@@ -1,0 +1,8 @@
+{
+    "model_type":1,
+    "lib":"/usr/local/ev_model_ability_supply/lib/X86/trt/libOcrTrtEvPlateV1.so",
+    "model_name":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.onnx",
+    "optimize":false,
+    "test_type":3,
+    "repeat_times":2
+}

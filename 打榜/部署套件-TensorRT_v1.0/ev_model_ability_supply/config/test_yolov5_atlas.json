@@ -1,0 +1,6 @@
+{
+"model_type":0,
+"lib":"/usr/local/ev_model_ability_supply/lib/ARM/atlas/libDetAtlasYolov5V1.so",
+"model_name":"/usr/local/ev_model_ability_supply/model/test_yolov5_enc.om",
+"optimize":false
+}

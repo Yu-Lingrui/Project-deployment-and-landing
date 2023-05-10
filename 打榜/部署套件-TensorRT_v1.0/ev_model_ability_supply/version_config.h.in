@@ -1,0 +1,7 @@
+#ifndef VERSION_CONFIG_H
+#define VERSION_CONFIG_H
+
+#define EMS_VERSION "@LIBINTERFACE_VERSION@"
+#define NV_INFER_LIB "@NV_INFER_LIB_DEF@"
+
+#endif

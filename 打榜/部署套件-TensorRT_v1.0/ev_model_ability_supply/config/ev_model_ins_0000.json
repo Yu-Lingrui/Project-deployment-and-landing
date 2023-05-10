@@ -1,0 +1,7 @@
+{
+    "engine":"tensorrt",
+    "model_path":"/usr/local/",
+    "model_type":"",
+    "weight_path":"",
+    "config_path":""
+}

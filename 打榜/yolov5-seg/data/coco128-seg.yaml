@@ -1,0 +1,44 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128-seg dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128-seg  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../dataset  # dataset root dir
+train: images/train2023  # train images (relative to 'path') 128 images
+val: images/val2023  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: Q bear cake
+  1: Fairy shell
+  2: Cold skin
+  3: Dried Gerber beans
+  4: hawthorn
+  5: Want Want snow cake
+  6: Fried rice
+  7: Milk cake
+  8: Dried stone ground beans
+  9: Vegetarian beef tendon
+  10: peanut
+  11: Bamboo shoot with peanuts
+  12: Crab fillet
+  13: Enoki mushroom
+  14: Strip wafer
+  15: Long sausage
+  16: Spicy shredded bamboo shoots
+  17: Dried incense
+  18: Dried fish
+  19: Fish bean curd
+  20: Duck feet
+  21: Duck wing
+ 
+
+
+# Download script/URL (optional)
+#download: https://ultralytics.com/assets/coco128-seg.zip

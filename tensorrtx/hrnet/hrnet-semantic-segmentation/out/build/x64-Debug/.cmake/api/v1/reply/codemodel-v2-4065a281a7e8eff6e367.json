@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hrnetseg",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hrnet::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hrnet-Debug-2472b2524c7ecde34061.json",
+					"name" : "hrnet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hrnet_ocr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hrnet_ocr-Debug-b07f7c163a7e5a0ef2e8.json",
+					"name" : "hrnet_ocr",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/hrnet/hrnet-semantic-segmentation/out/build/x64-Debug",
+		"source" : "C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/hrnet/hrnet-semantic-segmentation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

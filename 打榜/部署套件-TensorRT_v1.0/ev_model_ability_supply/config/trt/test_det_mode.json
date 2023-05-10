@@ -1,0 +1,68 @@
+{
+    "type":"client",
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/trt/"],
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "serving_models":
+    [   
+        {   
+            "server_address":"",
+            "mode":"local_model",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolov7",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov7_enc.onnx",
+            "uuid":"2"
+        },    
+        {   
+            "server_address":"",
+            "mode":"local_model",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolov5",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov5s_enc.onnx",
+            "uuid":"1"
+        },
+        {   
+            "server_address":"",
+            "mode":"local_model",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolox",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolox_enc.onnx",
+            "uuid":"11"
+        },   
+        {   
+            "server_address":"unix:/tmp/local.socket",
+            "mode":"rpc",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolov5",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov5s_enc.onnx",
+            "uuid":"4"
+        },
+        {   
+            "server_address":"unix:/tmp/local.socket",
+            "mode":"rpc",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolov7",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolov7_enc.onnx",
+            "uuid":"5"
+        },
+        {   
+            "server_address":"unix:/tmp/local.socket",
+            "mode":"rpc",
+            "type": "det",
+            "engine":"trt",
+            "framework":"yolox",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/yolox_enc.onnx",
+            "uuid":"22"
+        }
+    ]
+}

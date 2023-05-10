@@ -1,0 +1,3 @@
+C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/mobilenet/mobilenetv2/out/build/x64-Debug/CMakeFiles/mobilenet.dir
+C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/mobilenet/mobilenetv2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/mobilenet/mobilenetv2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

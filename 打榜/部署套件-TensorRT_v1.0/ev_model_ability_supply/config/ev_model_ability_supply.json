@@ -1,0 +1,8 @@
+{
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "deploy_models_path":"/usr/local/ev_model_ability_supply/config",    
+    "auth":{
+        "port" : 4001,
+        "ip":"192.168.1.186"
+    }
+}

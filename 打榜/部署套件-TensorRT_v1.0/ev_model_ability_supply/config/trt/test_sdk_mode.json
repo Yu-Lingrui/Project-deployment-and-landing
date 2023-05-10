@@ -1,0 +1,27 @@
+{
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/trt/"],
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "serving_models":
+    [   
+        {   
+        "server_address":"",
+        "mode":"local_model",
+        "type": "",
+        "engine":"sdk",
+        "framework":"",
+        "version": "",
+        "model":"",
+        "uuid":"012"
+        },
+        {   
+            "server_address":"unix:/tmp/local.socket",
+            "mode":"rpc",
+            "type": "",
+            "engine":"sdk",
+            "framework":"",
+            "version": "",
+            "model":"",
+            "uuid":"345"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "model_type":1,
+    "lib":"/usr/local/ev_model_ability_supply/lib/ARM/atlas/libOcrAtlasEvPlateV1.so",
+    "model_name":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.om",
+    "optimize":false,
+    "test_type":0,
+    "repeat_times":1000
+}

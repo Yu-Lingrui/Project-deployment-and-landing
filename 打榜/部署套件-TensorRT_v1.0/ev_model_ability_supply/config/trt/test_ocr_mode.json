@@ -1,0 +1,27 @@
+{
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/trt/"],
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "serving_models":
+    [   
+        {   
+            "server_address":"",
+            "mode":"local_model",
+            "type": "ocr",
+            "engine":"trt",
+            "framework":"evplate",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.onnx",
+            "uuid":"2"
+        },        
+        {   
+            "server_address":"unix:/tmp/local.socket",
+            "mode":"rpc",
+            "type": "ocr",
+            "engine":"trt",
+            "framework":"evplate",
+            "version": "v1",
+            "model":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.onnx",
+            "uuid":"4"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+"model_type":0,
+"lib":"/usr/local/ev_model_ability_supply/lib/atlas/libdet_atlas_yolox_v1.so",
+"model_name":"/usr/local/ev_model_ability_supply/model/yolox_enc.om",
+"optimize":false
+}

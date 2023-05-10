@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mobilenetv3",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mobilenetv3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mobilenetv3-Debug-9b2c48f021ca5763e716.json",
+					"name" : "mobilenetv3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/mobilenet/mobilenetv3/out/build/x64-Debug",
+		"source" : "C:/Users/qwe95/Desktop/coding/github(项目部署落地)/tensorrtx/mobilenet/mobilenetv3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

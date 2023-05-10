@@ -1,0 +1,1 @@
+-D__CUDA_ARCH__=520 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS "-IC:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/bin/../include"   -EHsc "C:\Users\qwe95\Desktop\coding\github(项目部署落地)\tensorrtx\swin-transformer\semantic-segmentation\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCUDA\tmp\CMakeCUDACompilerId.cudafe1.cpp" 

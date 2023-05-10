@@ -1,0 +1,11 @@
+.vscode/
+.idea/
+__pycache__/
+*.py[co]
+data/cityscapes/
+log/
+output/
+pretrained_models
+scripts/
+detail-api/
+data/list

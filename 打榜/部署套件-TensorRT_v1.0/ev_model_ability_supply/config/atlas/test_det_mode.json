@@ -1,0 +1,37 @@
+{    
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/atlas/"],
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "serving_models":
+    [
+    {   
+        "server_address":"",
+        "mode":"local_model",
+        "type": "det",
+        "engine":"atlas",
+        "framework":"yolov7",
+        "version": "v1",
+        "model":"/usr/local/ev_model_ability_supply/model/yolov7_enc.om",
+        "uuid":"2"
+    },    
+    {   
+        "server_address":"",
+        "mode":"local_model",
+        "type": "det",
+        "engine":"atlas",
+        "framework":"yolov5",
+        "version": "v1",
+        "model":"/usr/local/ev_model_ability_supply/model/yolov5s_enc.om",
+        "uuid":"1"
+    },
+    {   
+        "server_address":"",
+        "mode":"local_model",
+        "type": "det",
+        "engine":"atlas",
+        "framework":"yolox",
+        "version": "v1",
+        "model":"/usr/local/ev_model_ability_supply/model/yolox_enc.om",
+        "uuid":"3"
+    }
+    ]
+}

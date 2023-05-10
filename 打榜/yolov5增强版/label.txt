@@ -1,0 +1,3 @@
+['bicycle','motorbike','electric_scooter','tricycle','auto_tricycle','none_person_bicycle','none_person_motorbike' ,'none_person_electric_scooter','none_person_tricycle','none_person_auto_tricycle',
+'unknown_person_bicycle','unknown_person_motorbike','unknown_person_electric_scooter','unknown_person_tricycle','unknown_person_auto_tricycle','person','rider','bicycle_person','motorbike_person','electric_scooter_person',
+'tricycle_person','auto_tricycle_person']

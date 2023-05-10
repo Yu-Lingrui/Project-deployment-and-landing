@@ -1,0 +1,8 @@
+{
+    "model_type":0,
+    "lib":"/usr/local/ev_model_ability_supply/lib/X86/trt/libDetTrtYoloXV1.so",
+    "model_name":"/usr/local/ev_model_ability_supply/model/yolox_enc.onnx",
+    "optimize":false,
+    "test_type":3,
+    "repeat_times":2
+}

@@ -1,0 +1,17 @@
+{    
+    "model_lib_path":["/usr/local/ev_model_ability_supply/lib/atlas/"],
+    "sdk_lib_path":"/usr/local/ev_sdk/lib/libji.so",
+    "serving_models":
+    [
+    {   
+        "server_address":"",
+        "mode":"local_model",
+        "type": "ocr",
+        "engine":"atlas",
+        "framework":"evplate",
+        "version": "v1",
+        "model":"/usr/local/ev_model_ability_supply/model/exported_plate_with_type_0222_enc.om",
+        "uuid":"2"
+    }
+    ]
+}

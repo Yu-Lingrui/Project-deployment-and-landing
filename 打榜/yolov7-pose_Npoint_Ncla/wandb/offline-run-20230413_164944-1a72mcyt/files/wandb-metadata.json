@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.8.12",
+    "heartbeatAt": "2023-04-13T08:49:46.021233",
+    "startedAt": "2023-04-13T08:49:44.838099",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_Ncla_nPoint.py",
+    "codePath": "\u6253\u699c\\yolov7-pose_Npoint_Ncla\\train_Ncla_nPoint.py",
+    "git": {
+        "remote": "https://github.com/Yu-Lingrui/Project-deployment-and-landing.git",
+        "commit": "dff60f40520869c7dbd07d6f58b4f29ce05f43fb"
+    },
+    "email": "15282590579@163.com",
+    "root": "C:/Users/qwe95/Desktop/coding/github(\u9879\u76ee\u90e8\u7f72\u843d\u5730)",
+    "host": "YLR",
+    "username": "Local user",
+    "executable": "C:\\ProgramData\\Anaconda3\\envs\\pytorch\\python.exe"
+}

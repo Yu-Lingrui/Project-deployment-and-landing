@@ -1,0 +1,6 @@
+mobile_phone
+person_on_phone
+hand
+back_head
+side_head
+front_head
