@@ -242,3 +242,33 @@ SAM优化器可使损失值和损失锐度同时最小化，并可以改善各�
 最终效果：测试精度再次上升5个点！！！可以看到只比常年站榜的前三名大佬最终得分只低一点点，且fps最好有130+，比所有人都高！   
 *ps：如果还想提升一点精度，可以把之前的sam优化加上，或者尝试其他的模型架构*
 <img src="fig/4.jpg" alt="g" style="zoom:40%;" />
+
+## 3、其余收集链接：
+Reparameterization-https://github.com/WongKinYiu/yolov7/blob/main/tools/reparameterization.ipynb +fps    
+
+YOLOV8改进-添加注意力机制 附带几十种注意力机制代码-添加Wise-IoU-添加可变形卷积(DCNV2)-https://blog.csdn.net/qq_37706472/article/details/128679699?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-128679699-blog-130472736.235%5Ev35%5Epc_relevant_increate_t0_download_v2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-128679699-blog-130472736.235%5Ev35%5Epc_relevant_increate_t0_download_v2&utm_relevant_index=1
+
+获得最佳训练效果的技巧-https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results
+
+用于数据集、标签和主动学习的 Roboflow-https://github.com/ultralytics/yolov5/issues/4975
+
+测试时数据增强 (TTA)-https://github.com/ultralytics/yolov5/issues/303
+
+模型集成-https://github.com/ultralytics/yolov5/issues/318
+
+模型剪枝/稀疏性-https://github.com/ultralytics/yolov5/issues/304
+def prune(model, amount=0.3): 
+     # Prune model to requested global sparsity 
+     import torch.nn.utils.prune as prune 
+     print('Pruning model... ', end='') 
+     for name, m in model.named_modules(): 
+         if isinstance(m, nn.Conv2d): 
+             prune.l1_unstructured(m, name='weight', amount=amount)  # prune 
+             prune.remove(m, 'weight')  # make permanent 
+     print(' %.3g global sparsity' % sparsity(model)) 
+
+超参数进化-https://github.com/ultralytics/yolov5/issues/607
+
+架构概要-https://github.com/ultralytics/yolov5/issues/6998  、
+
+AMP-https://zhuanlan.zhihu.com/p/500060805
