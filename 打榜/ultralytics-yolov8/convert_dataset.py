@@ -3,7 +3,7 @@ import random
 import json
 
 '''
-YOLO v7 pose
+YOLO v8 pose
 xml -> txt
 '''
 

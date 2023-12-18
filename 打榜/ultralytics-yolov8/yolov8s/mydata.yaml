@@ -1,0 +1,36 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: /home/data/train.txt
+val: /home/data/val.txt
+#test: ./dataset/score/images/test # test images (optional)
+
+# Classes
+names:
+  0: person
+  1: head
+  2: door_open
+  3: door_half_open
+  4: door_close
+  5: daizi
+  6: bottle
+  7: bag
+  8: box
+  9: plastic_basket
+  10: suitcase
+  11: mobile_phone
+  12: umbrella
+  13: folder
+  14: bicycle
+  15: electric_scooter
+
+
+  
+

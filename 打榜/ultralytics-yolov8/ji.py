@@ -16,17 +16,17 @@ import torch
 
 
 
-CONF_THRESH = 0.5
-IOU_THRESHOLD = 0.5
-kpt_thresh = 0.5
+# CONF_THRESH = 0.5
+# IOU_THRESHOLD = 0.5
+# kpt_thresh = 0.5
 device = 'cuda:0'
 model_path = '/project/train/models/train/weights/best.pt'
-imgsz = 640
-stride = None
-half = True
+# imgsz = 640
+# stride = None
+# half = True
 
 # categories = ["slagcar", "car", "tricar", "motorbike", "bicycle", "bus", "truck", "tractor"]
-categories = {0: 'stand', 1: 'sit', 2: 'crouch', 3: 'prostrate_sleep', 4: 'sit_sleep', 5: 'lie_sleep'}
+categories = ["prostrate_sleep","sit_sleep", "lie_sleep"]
 target_categories = ["prostrate_sleep","sit_sleep", "lie_sleep"]
 
 def convert_results(result_boxes,result_keypoints, result_scores, result_classid):
@@ -77,68 +77,68 @@ def convert_results(result_boxes,result_keypoints, result_scores, result_classid
 
     return json.dumps(res, indent=4)
 
-if __name__ == "__main__":
-    class time_count:
-        def __init__(self):
-            self.count = 0
-            self.count1_call_times = 0
-            self.names = []
+# if __name__ == "__main__":
+#     class time_count:
+#         def __init__(self):
+#             self.count = 0
+#             self.count1_call_times = 0
+#             self.names = []
 
-        def init(self):
-            self.count += 1
-            self.count_call_times = 0
+#         def init(self):
+#             self.count += 1
+#             self.count_call_times = 0
 
-            if self.count == 1:
-                pass
-            elif self.count == 2:
-                self.list = [[] for _ in range(self.count1_call_times)]
-            elif self.count > 2:
-                pass
-            else:
-                raise Exception("time_count")
-            self.start = time.time()
+#             if self.count == 1:
+#                 pass
+#             elif self.count == 2:
+#                 self.list = [[] for _ in range(self.count1_call_times)]
+#             elif self.count > 2:
+#                 pass
+#             else:
+#                 raise Exception("time_count")
+#             self.start = time.time()
 
-        def __call__(self, name):
-            self.end = time.time()
-            if self.count == 1:
-                self.count1_call_times += 1
-                self.names.append(name)
-            elif self.count > 1:
-                self.list[self.count_call_times].append(self.end - self.start)
-                self.count_call_times += 1
-            else:
-                raise Exception("time_count")
-            self.start = time.time()
+#         def __call__(self, name):
+#             self.end = time.time()
+#             if self.count == 1:
+#                 self.count1_call_times += 1
+#                 self.names.append(name)
+#             elif self.count > 1:
+#                 self.list[self.count_call_times].append(self.end - self.start)
+#                 self.count_call_times += 1
+#             else:
+#                 raise Exception("time_count")
+#             self.start = time.time()
 
-        def summury(self):
-            print("==" * 20)
-            spend_time_mean_overall = 0
-            for idx in range(len(self.names)):
-                name = self.names[idx]
-                spend_time_list = self.list[idx]
-                spend_time_mean = np.mean(spend_time_list) * 1000
-                spend_time_std = np.std(spend_time_list) * 1000
-                if spend_time_mean > 0.01:
-                    print("{: <80}{: <20}{: <20}".format(name, round(spend_time_mean, 2), round(spend_time_std, 10)))
-                spend_time_mean_overall += spend_time_mean
-            print("{: <80}{: <20}".format("overall_time", round(spend_time_mean_overall, 1)))
-            print("{: <80}{: <20}".format("overall_fps", round(1000 / spend_time_mean_overall, 1)))
-            print("==" * 20)
-else:
-    class time_count:
-        def __init__(self):
-            pass
+#         def summury(self):
+#             print("==" * 20)
+#             spend_time_mean_overall = 0
+#             for idx in range(len(self.names)):
+#                 name = self.names[idx]
+#                 spend_time_list = self.list[idx]
+#                 spend_time_mean = np.mean(spend_time_list) * 1000
+#                 spend_time_std = np.std(spend_time_list) * 1000
+#                 if spend_time_mean > 0.01:
+#                     print("{: <80}{: <20}{: <20}".format(name, round(spend_time_mean, 2), round(spend_time_std, 10)))
+#                 spend_time_mean_overall += spend_time_mean
+#             print("{: <80}{: <20}".format("overall_time", round(spend_time_mean_overall, 1)))
+#             print("{: <80}{: <20}".format("overall_fps", round(1000 / spend_time_mean_overall, 1)))
+#             print("==" * 20)
+# else:
+#     class time_count:
+#         def __init__(self):
+#             pass
 
-        def init(self):
-            pass
+#         def init(self):
+#             pass
 
-        def __call__(self, name):
-            pass
+#         def __call__(self, name):
+#             pass
 
-        def summury(self):
-            pass
-global tc
-tc = time_count()
+#         def summury(self):
+#             pass
+# global tc
+# tc = time_count()
 
 @torch.no_grad()
 def init():
@@ -163,6 +163,7 @@ def init():
 @torch.no_grad()
 def process_image(model, input_image, args=None, **kwargs):
     result = model(input_image)[0].cpu().numpy()
+    result = model(input_image, imgsz=480, conf=0.5, iou=0.7, half=True, device=device)[0].cpu().numpy()
     # img = letterbox(input_image, imgsz, stride=stride, auto=True)[0]  # BGR
     # tc('letterbox')
     # img = img.transpose((2, 0, 1))[::-1]  # HWC to CHW, BGR to RGB
@@ -173,7 +174,7 @@ def process_image(model, input_image, args=None, **kwargs):
     # img /= 255  # 0 - 255 to 0.0 - 1.0
     # tc('255')
     # pred = model(img, augment=False, visualize=False)[0]
-    tc('infer')
+    # tc('infer')
     # conf_thres = CONF_THRESH  # confidence threshold
     # iou_thres = IOU_THRESHOLD  # NMS IOU threshold
     # classes = None  # filter by class: --class 0, or --class 0 2 3
@@ -192,30 +193,30 @@ def process_image(model, input_image, args=None, **kwargs):
     result_boxes[:,0:2] = result.boxes.xyxy[:,0:2]
     result_scores = result.boxes.conf
     result_classid = result.boxes.cls
-    result_keypoints = result.keypoints
+    result_keypoints = result.keypoints.data
     res = convert_results(result_boxes,result_keypoints, result_scores, result_classid)
-    tc('convert')
+    # tc('convert')
     return res
 
 if __name__ == '__main__':
-    model_path = '/usr/local/ev_sdk/model/best.pt'
-    imgsz = 640
+    # model_path = '/usr/local/ev_sdk/model/best.pt'
+    # imgsz = 640
     # Test API
 
     img_paths = glob.glob("/home/data/*/*.jpg")
     model = init()
 
-    total_time = 0
+    # total_time = 0
       
     for img_path in tqdm(img_paths):
-        img = cv2.imread(img_path)
-        start = time.time()
-        tc.init()  
+        img = cv2.imread(img_path)[:,:,::-1]
+        # start = time.time()
+        # tc.init()  
         result = process_image(model, img)
         print(result)
-        end = time.time()
-        total_time += end - start
-    tc.summury()
+        # end = time.time()
+        # total_time += end - start
+    # tc.summury()
 
-    print(">> time >> " + str(total_time))
-    print(">> fps >> " + str(len(img_paths) / total_time))
+    # print(">> time >> " + str(total_time))
+    # print(">> fps >> " + str(len(img_paths) / total_time))

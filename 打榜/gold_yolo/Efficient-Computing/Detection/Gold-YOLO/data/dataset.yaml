@@ -1,0 +1,10 @@
+# Please insure that your custom_dataset are put in same parent dir with YOLOv6_DIR
+train: /home/data/data/images/train # train images
+val: /home/data/data/images/val # val images
+test: /home/data/data/images/test # test images (optional)
+
+# whether it is coco dataset, only coco dataset should be set to True.
+is_coco: False
+# Classes
+nc: 2  # number of classes
+names: ['head','hat']  # class names
